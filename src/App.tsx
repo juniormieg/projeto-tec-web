@@ -1,20 +1,17 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
-import LoginScreen from './pages/loginScreen'
-import Register from './pages/register'
-import Header from './components/header'
 import WellnessCheck from './pages/wellnessCheck'
-import Footer from './components/footer'
+import Register from './pages/register'
 import EventProfile from './pages/eventProfile'
 
 function App() {
   return (
-    <div>
-   <Header/>
-   <EventProfile/>
-   <WellnessCheck/>
-   <Footer/>
-   </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/wellnessCheck" element={<WellnessCheck />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/eventProfile" element={<EventProfile />} />
+    </Routes>
   )
 }
 

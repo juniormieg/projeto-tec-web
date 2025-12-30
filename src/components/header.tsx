@@ -18,8 +18,8 @@ export default function Header() {
 
         <nav className="flex items-center gap-8 text-[16px] text-[#005F6B] font-normal">
           <a href="#" className="hover:text-[#E4007C] transition-colors">Início</a>
-          <a href="#" className="hover:text-[#E4007C] transition-colors">Criar Perfil</a>
-          <a href="#" className="hover:text-[#E4007C] transition-colors">Verificação de bem-estar</a>
+          <a href="/eventProfile" className="hover:text-[#E4007C] transition-colors">Criar Perfil</a>
+          <a href="/wellnessCheck" className="hover:text-[#E4007C] transition-colors">Verificação de bem-estar</a>
           <a href="#" className="hover:text-[#E4007C] transition-colors">Verificação Cardíaca</a>
           <a href="#" className="hover:text-[#E4007C] transition-colors">Biblioteca</a>
           <a href="#" className="hover:text-[#E4007C] transition-colors">Meu Histórico</a>
