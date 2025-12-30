@@ -44,6 +44,12 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@theme {
+  --color-primary-pink: #E4007C;
+  --color-primary-blue: #005F6B;
+  --color-primary-gray: #F4F4F4;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);

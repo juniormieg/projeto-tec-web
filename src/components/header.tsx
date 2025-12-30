@@ -21,7 +21,7 @@ export default function Header() {
           <a href="/eventProfile" className="hover:text-[#E4007C] transition-colors">Criar Perfil</a>
           <a href="/wellnessCheck" className="hover:text-[#E4007C] transition-colors">Verificação de bem-estar</a>
           <a href="#" className="hover:text-[#E4007C] transition-colors">Verificação Cardíaca</a>
-          <a href="#" className="hover:text-[#E4007C] transition-colors">Biblioteca</a>
+          <a href="/wellnessLibrary" className="hover:text-[#E4007C] transition-colors">Biblioteca</a>
           <a href="#" className="hover:text-[#E4007C] transition-colors">Meu Histórico</a>
         </nav>
 
