@@ -27,12 +27,12 @@ export function ChatAssistant() {
   }, [api]);
 
   return (
-    <div className="bg-white rounded-[24px] p-6 shadow-sm border border-[#F4E6EE]">
-      <div className="flex items-center gap-3 mb-4 border-b border-[#F4F4F4] pb-4">
-        <img src="/imgs/traceyProfile.svg" alt="Tracey" className="w-12 h-12 rounded-full border-2 border-[#E4007C]" />
+    <div className="bg-white rounded-[24px] p-6 shadow-sm border border-violeta-claro">
+      <div className="flex items-center gap-3 mb-4 border-b border-primary-gray pb-4">
+        <img src="/imgs/traceyProfile.svg" alt="Tracey" className="w-12 h-12 rounded-full border-2 border-primary-pink" />
         <div>
-          <h3 className="text-[16px] font-bold text-[#2D2D2D]">Tracey</h3>
-          <p className="text-[14px] text-[#E4007C]">Assistente de saúde</p>
+          <h3 className="text-[16px] font-bold text-preto-suave">Tracey</h3>
+          <p className="text-[14px] text-primary-pink">Assistente de saúde</p>
         </div>
       </div>
 
@@ -48,8 +48,8 @@ export function ChatAssistant() {
         <CarouselContent>
           {messages.map((msg, index) => (
             <CarouselItem key={index}>
-              <div className="bg-[#F4E6EE] p-5 rounded-3xl rounded-tl-none min-h-30 flex items-center animate-in fade-in duration-700">
-                <p className="text-[16px] text-[#2D2D2D] leading-relaxed">{msg}</p>
+              <div className="bg-violeta-claro p-5 rounded-3xl rounded-tl-none min-h-30 flex items-center animate-in fade-in duration-700">
+                <p className="text-[16px] text-preto-suave leading-relaxed">{msg}</p>
               </div>
             </CarouselItem>
           ))}
@@ -62,7 +62,7 @@ export function ChatAssistant() {
             key={index}
             onClick={() => api?.scrollTo(index)}
             className={`h-1.5 flex-1 rounded-full transition-all duration-500 ease-in-out ${
-              current === index ? 'bg-[#E4007C]' : 'bg-[#E4007C] opacity-20 hover:opacity-40'
+              current === index ? 'bg-primary-pink' : 'bg-primary-pink opacity-20 hover:opacity-40'
             }`}
             aria-label={`Ir para mensagem ${index + 1}`}
           />

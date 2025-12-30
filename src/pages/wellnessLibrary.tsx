@@ -26,8 +26,8 @@ export default function WellnessLibrary() {
 								className="
                   text-primary-blue
                   bg-white
-                  w-[450px]
-                  h-[40px]
+                  w-112.5
+                  h-10
                   rounded-2xl
                   pl-9
                   pr-3

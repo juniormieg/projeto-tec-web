@@ -18,7 +18,7 @@ export default function Home() {
 					<h1 className="text-5xl font-bold">Bem vindo de volta!</h1>
 					<span className="text-slate-500 text-xl">
 						novo por aqui?{" "}
-						<Link to="/register" className="text-[#005F6B]">
+						<Link to="/register" className="text-primary-blue">
 							Cadastre-se
 						</Link>
 					</span>
@@ -27,7 +27,7 @@ export default function Home() {
 					<Input type="email" label="Email" />
 					<Input type="password" label="Sua senha" />
 				</div>
-				<button onClick={()=> navigate("/wellnessCheck")} className="bg-[#005F6B] text-white px-4 py-2 rounded-xl w-122.5 h-12.5 font-bold">
+				<button onClick={()=> navigate("/wellnessCheck")} className="bg-primary-blue text-white px-4 py-2 rounded-xl w-122.5 h-12.5 font-bold">
 					Entrar
 				</button>
 				<div className="flex justify-between w-122.5">
@@ -35,7 +35,7 @@ export default function Home() {
 						{" "}
 						<input type="checkbox" /> Lembrar de mim
 					</label>
-					<Link to="/forgot-password" className="text-[#005F6B]">
+					<Link to="/forgot-password" className="text-primary-blue">
 						Esqueceu sua senha?
 					</Link>
 				</div>

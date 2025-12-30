@@ -15,8 +15,8 @@ export default function WellnessCheck() {
   const getActivityText = (v: number) => Math.round(v) >= 8 ? "Muito ativo" : Math.round(v) >= 5 ? "Como chegar" : "Pouca atividade";
 
   return (
-    <div className="w-full min-h-screen bg-[#FCF8FA] font-sans">
-		<Header/>
+    <div className="w-full min-h-screen bg-primary-gray">
+    <Header/>
       <div className="max-w-360 mx-auto px-5 lg:px-18.75 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
 
         <div className="lg:col-span-4 flex flex-col gap-6">
@@ -25,10 +25,10 @@ export default function WellnessCheck() {
 
         <div className="lg:col-span-8 flex flex-col gap-8">
           <div>
-            <h1 className="text-[32px] md:text-[40px] font-extrabold text-[#2D2D2D] leading-tight mb-3">
+            <h1 className="text-[32px] md:text-[40px] font-extrabold text-preto-suave leading-tight mb-3">
               Sua avaliação semanal
             </h1>
-            <p className="text-[#2D2D2D] text-lg font-medium opacity-80">
+            <p className="text-preto-suave text-lg font-medium opacity-80">
               Nas últimas 24 horas, como você se saiu?
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function WellnessCheck() {
           <div className="flex flex-col gap-6">
             <WellnessCard 
               id="mood" label="Humor" value={mood} setValue={setMood} statusText={getMoodText(mood)}
-              color="#E4007C" bgColor="#FCE5F2" iconPath="/imgs/wellnessCheck/smileIcon.svg"
+              color="#E4007C" bgColor="#F4E6EE" iconPath="/imgs/wellnessCheck/smileIcon.svg"
             />
             <WellnessCard 
               id="sleep" label="Dormir" value={sleep} setValue={setSleep} statusText={getSleepText(sleep)}
@@ -49,13 +49,13 @@ export default function WellnessCheck() {
           </div>
 
           <div className="flex justify-end pt-4">
-            <Button className="bg-[#E4007C] hover:bg-[#C00068] text-white text-base font-bold py-6 px-10 rounded-full shadow-lg shadow-pink-200 transition-all transform hover:-translate-y-1">
+            <Button className="bg-primary-pink hover:bg-[#C00068] text-white text-base font-bold py-6 px-10 rounded-full shadow-lg shadow-pink-200 transition-all transform hover:-translate-y-1">
               Enviar verificação de bem estar
             </Button>
           </div>
         </div>
       </div>
-	  <Footer/>
+    <Footer/>
     </div>
   );
 }

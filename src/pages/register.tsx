@@ -19,7 +19,7 @@ export default function Register() {
 					<h1 className="text-5xl font-bold">Crie sua conta</h1>
 					<span className="text-slate-500 text-xl">
 						já tem uma conta?{" "}
-						<Link to="/" className="text-[#005F6B]">
+						<Link to="/" className="text-primary-blue">
 							entre aqui
 						</Link>
 					</span>
@@ -32,7 +32,7 @@ export default function Register() {
 				</div>
 				<button
 					onClick={() => navigate("/")}
-					className="bg-[#005F6B] text-white px-4 py-2 rounded-xl w-122.5 h-12.5 font-bold"
+					className="bg-primary-blue text-white px-4 py-2 rounded-xl w-122.5 h-12.5 font-bold"
 				>
 					Cadastrar
 				</button>
@@ -45,13 +45,13 @@ export default function Register() {
 				<div className="flex flex-col w-122.5 gap-4">
 					<h2>ou cadastre-se com</h2>
 					<div className="flex gap-4">
-						<button className="w-[155px] h-9 flex items-center justify-center border-1 border-slate-500 rounded-md ">
+						<button className="w-38.75 h-9 flex items-center justify-center border border-slate-500 rounded-md ">
 							<img src={Google} alt="Google" className="w-6 h-6" />
 						</button>
-						<button className="w-[155px] h-9 flex items-center justify-center border-1 border-slate-500 rounded-md ">
+						<button className="w-38.75 h-9 flex items-center justify-center border border-slate-500 rounded-md ">
 							<img src={Facebook} alt="Facebook" className="w-6 h-6" />
 						</button>
-						<button className="w-[155px] h-9 flex items-center justify-center border-1 border-slate-500 rounded-md ">
+						<button className="w-38.75 h-9 flex items-center justify-center border border-slate-500 rounded-md ">
 							<img src={Apple} alt="Apple" className="w-6 h-6" />
 						</button>
 					</div>
