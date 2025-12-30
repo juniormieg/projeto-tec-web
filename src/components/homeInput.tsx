@@ -9,7 +9,7 @@ export default function Input({label, type = 'text', ...rest }: InputProps) {
       <input
       type={type}
       {...rest}
-      className="w-122.5 h-12.5 border-1 border-slate-500 rounded-xl px-3 py-2 focus:outline-none focus:ring-1"
+      className="w-122.5 h-12.5 border border-slate-500 rounded-xl px-3 py-2 focus:outline-none focus:ring-1"
     />
     </div>
     
