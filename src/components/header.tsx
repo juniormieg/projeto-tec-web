@@ -19,7 +19,7 @@ export default function Header() {
           <a href="/inicio" className="hover:text-primary-pink transition-colors">Início</a>
           <a href="/eventProfile" className="hover:text-primary-pink transition-colors">Criar Perfil</a>
           <a href="/wellnessCheck" className="hover:text-primary-pink transition-colors">Verificação de bem-estar</a>
-          <a href="#" className="hover:text-primary-pink transition-colors">Verificação Cardíaca</a>
+          <a href="/heartCheck" className="hover:text-primary-pink transition-colors">Verificação Cardíaca</a>
           <a href="/wellnessLibrary" className="hover:text-primary-pink transition-colors">Biblioteca</a>
           <a href="/historico" className="hover:text-primary-pink transition-colors">Meu Histórico</a>
         </nav>
