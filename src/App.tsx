@@ -5,6 +5,7 @@ import Register from "./pages/register";
 import EventProfile from "./pages/eventProfile";
 import WellnessLibrary from "./pages/wellnessLibrary";
 import { Inicio } from "./pages/inicio";
+import Historico from "./pages/historico";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/eventProfile" element={<EventProfile />} />
       <Route path="/wellnessLibrary" element={<WellnessLibrary />} />
       <Route path="/inicio" element={<Inicio />} />
+      <Route path="/historico" element={<Historico />} />
     </Routes>
   );
 }

@@ -21,7 +21,7 @@ export default function Header() {
           <a href="/wellnessCheck" className="hover:text-primary-pink transition-colors">Verificação de bem-estar</a>
           <a href="#" className="hover:text-primary-pink transition-colors">Verificação Cardíaca</a>
           <a href="/wellnessLibrary" className="hover:text-primary-pink transition-colors">Biblioteca</a>
-          <a href="#" className="hover:text-primary-pink transition-colors">Meu Histórico</a>
+          <a href="/historico" className="hover:text-primary-pink transition-colors">Meu Histórico</a>
         </nav>
 
         <div className="flex items-center gap-6">
