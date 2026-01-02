@@ -16,7 +16,7 @@ export default function Header() {
         </div>
 
         <nav className="flex items-center gap-8 text-[16px] text-primary-blue font-normal">
-          <a href="#" className="hover:text-primary-pink transition-colors">Início</a>
+          <a href="/inicio" className="hover:text-primary-pink transition-colors">Início</a>
           <a href="/eventProfile" className="hover:text-primary-pink transition-colors">Criar Perfil</a>
           <a href="/wellnessCheck" className="hover:text-primary-pink transition-colors">Verificação de bem-estar</a>
           <a href="#" className="hover:text-primary-pink transition-colors">Verificação Cardíaca</a>

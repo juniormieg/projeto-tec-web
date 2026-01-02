@@ -7,7 +7,7 @@ import run from "../assets/run.png";
 import beat from "../assets/beat.png";
 import seta from "../assets/seta.png";
 
-export function HomeScreen() {
+export function Inicio() {
   return (
     <div className="w-full min-h-screen bg-[#F8F9FA] font-sans flex flex-col">
       <Header />

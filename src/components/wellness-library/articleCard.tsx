@@ -16,7 +16,7 @@ export default function ArticleCard({
   icon,
 }: CardArtigoProps) {
   return (
-    <div className="bg-white rounded-32px border border-gray-100 shadow-sm p-10 flex flex-col gap-2 relative max-w-sm">
+    <div className="bg-white rounded-4xl border border-gray-100 shadow-sm p-10 flex flex-col gap-2 relative max-w-sm m-14">
       <div className="flex justify-center items-center h-40">
         <img src={image} alt={tittle} className="max-h-full object-contain" />
       </div>

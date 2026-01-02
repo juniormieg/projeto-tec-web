@@ -119,7 +119,7 @@ export default function WellnessLibrary() {
           </div>
         </div>
 
-        <div className="w-full">
+        <div className="w-full mt-12">
           <div className="flex flex-wrap gap-4 px-14 pb-8">
             {categories.map((cat) => (
               <FilterCard key={cat} label={cat} isActive={cat === "Todos"} />
@@ -129,9 +129,9 @@ export default function WellnessLibrary() {
           <div className="w-full border-t border-gray-200"></div>
         </div>
         <div className="min-h-screen bg-primary-gray pb-10">
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="grid grid-cols-4 justify-center gap-4">
             {myArticles.map((artigo) => (
-              <div key={artigo.id} className="w-full  lg:w-[calc(28%-1rem)]">
+              <div key={artigo.id} className="w-full rounded-2xl">
                 <ArticleCard
                   image={artigo.image}
                   category={artigo.category}
