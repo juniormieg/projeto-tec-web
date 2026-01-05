@@ -1,4 +1,3 @@
-// Define os tipos que usaremos em todo o chat
 export type MessageType = "bot" | "user" | "alert";
 
 export interface Message {
@@ -18,9 +17,7 @@ export interface ScriptStep {
   options: ChatOption[];
 }
 
-// O Roteiro do Chat (Expandido e Melhorado)
 export const chatScript: Record<string, ScriptStep> = {
-  // 1. Início da conversa
   initial: {
     botReply: "Olá! Sou a Tracey, sua assistente de bem-estar. Como você está se sentindo neste momento?",
     options: [
@@ -30,7 +27,6 @@ export const chatScript: Record<string, ScriptStep> = {
     ],
   },
 
-  // --- FLUXO POSITIVO ---
   feeling_good: {
     botReply: "Fico muito feliz em saber! É ótimo ver você com essa energia. Você chegou a praticar alguma atividade física hoje?",
     options: [
@@ -58,7 +54,6 @@ export const chatScript: Record<string, ScriptStep> = {
     ],
   },
 
-  // --- FLUXO CANSAÇO/ESTRESSE ---
   feeling_tired: {
     botReply: "Entendo. Às vezes a rotina pesa um pouco. Você diria que esse cansaço é mais físico ou mental (estresse)?",
     options: [
@@ -80,7 +75,6 @@ export const chatScript: Record<string, ScriptStep> = {
     ],
   },
 
-  // --- FLUXO SINTOMAS (CRÍTICO OU LEVE) ---
   feeling_bad: {
     botReply: "Sinto muito. Para eu poder ajudar melhor, o que exatamente você está sentindo?",
     options: [

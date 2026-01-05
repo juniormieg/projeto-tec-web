@@ -6,7 +6,6 @@ import { MessageBubble } from "@/components/heart-check/MessageBubble";
 import { ChatInput } from "@/components/heart-check/ChatInput";
 
 export default function HeartCheck() {
-  // --- STATE ---
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
@@ -18,7 +17,6 @@ export default function HeartCheck() {
   const [showOptions, setShowOptions] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
   
-  // Estado para o horário dinâmico
   const [timeDisplay, setTimeDisplay] = useState("HOJE");
 
   const messagesEndRef = useRef<HTMLDivElement>(null);

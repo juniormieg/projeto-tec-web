@@ -16,7 +16,7 @@ export function WellnessCard({
 }: WellnessCardProps) {
   
   return (
-    <div className="bg-white rounded-[24px] p-6 md:p-8 shadow-sm border border-[#F4E6EE] hover:shadow-md transition-shadow">
+    <div className="bg-white rounded-[24px] p-6 md:p-8 shadow-sm border border-violeta-claro hover:shadow-md transition-shadow">
       <div className="flex flex-col md:flex-row gap-6 items-center">
         
         <div 
@@ -32,7 +32,7 @@ export function WellnessCard({
               <p className="text-sm font-bold uppercase tracking-wide mb-1" style={{ color: color }}>
                 {label}
               </p>
-              <h3 className="text-xl font-bold text-[#2D2D2D]">{statusText}</h3>
+              <h3 className="text-xl font-bold text-preto-suave">{statusText}</h3>
             </div>
             <div className="text-2xl font-black" style={{ color: color }}>
               {Math.round(value)}<span className="text-lg text-gray-400 font-medium">/10</span>

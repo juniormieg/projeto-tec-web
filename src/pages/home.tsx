@@ -27,7 +27,7 @@ export default function Home() {
 					<Input type="email" label="Email" />
 					<Input type="password" label="Sua senha" />
 				</div>
-				<button onClick={()=> navigate("/wellnessCheck")} className="bg-primary-blue text-white px-4 py-2 rounded-xl w-122.5 h-12.5 font-bold">
+				<button onClick={()=> navigate("/inicio")} className="bg-primary-blue text-white px-4 py-2 rounded-xl w-122.5 h-12.5 font-bold">
 					Entrar
 				</button>
 				<div className="flex justify-between w-122.5">
